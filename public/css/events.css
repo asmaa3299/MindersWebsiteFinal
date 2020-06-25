@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Start of header*/
+
+.event_header {
+    overflow: hidden;
+    height: 615px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+
+
+.event_header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 615px;
+    opacity: .8;
+    background: #000;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.cover_details {
+    margin-top: 130px;
+    color: white;
+    text-align: center;
+}
+
+.form_btn {
+    color: white;
+    padding: 5px 70px 5px 70px;
+    border-radius: 50px 50px;
+    background: #F1C40F radial-gradient(circle, transparent 1%, #F1C40F 1%) center/15000%;
+}
+
+.form_btn a,
+.form_btn a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.form_btn:hover {
+    background-size: 100%;
+    background-color: black;
+    color: white;
+    transition: all ease-in-out .8s;
+    transform: scale(1.1);
+}
+
+.event_header_icons {
+    text-align: center;
+}
+
+.event_header_icons button,
+.event_header_icons i {
+    text-align: center;
+    border: solid 2px #F1C40F;
+    border-radius: 100%;
+    color: #F1C40F;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 5px;
+    padding: 8px;
+}
+
+.event_header_icons button:hover,
+.event_header_icons i:hover {
+    color: #F1C40F;
+    transform: scale(1.1);
+    transition: all ease-in-out .3s;
+}
+
+.btn-back {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*up button*/
+
+#upbtn .up-btn {
+    background-color: black;
+    color: #F1C40F;
+    box-shadow: 2px 5px 2px 0px #F1C40F;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#upbtn .up-btn:hover {
+    background-color: #F1C40F;
+    color: black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*Start of description section*/
+
+.description {
+    margin-bottom: 50px;
+}
+
+.description-header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #F1C40F;
+    text-transform: capitalize;
+}
+
+.description-content {
+    transition: all ease-in-out .8s;
+    height: 100px;
+}
+
+.description-hidden-content {
+    opacity: 0;
+    position: absolute;
+    transition: all ease-in-out .8s;
+}
+
+.btn-description {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    padding: 5px 50px 5px 50px;
+    border-radius: 50px 50px;
+    background: #F1C40F radial-gradient(circle, transparent 1%, #F1C40F 1%) center/15000%;
+    text-transform: capitalize;
+}
+
+.btn-description:hover {
+    background-size: 100%;
+    background-color: black;
+    color: white;
+    transition: all ease-in-out .8s;
+}
+
+
+/*Speaker section */
+
+.speaker-header {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #F1C40F;
+    text-transform: capitalize;
+}
+
+.speakers {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: black;
+    background-color: black;
+    background-size: cover;
+    border-top: solid 5px #F1C40F;
+}
+
+.speakers .card {
+    border-bottom: solid 3px #F1C40F;
+    border-top: solid 3px #F1C40F;
+    margin-bottom: 50px;
+}
+
+.speakers img {
+    filter: grayscale(75%);
+    transform: scale(1.1, 1);
+    height: 300px;
+    width: 100%;
+}
+
+.MD-speakers img {
+    transform: scale(1, 1);
+}
+
+.speakers img:hover {
+    filter: grayscale(0%);
+    transform: scale(1, .8);
+    transition: all ease-in-out .3s;
+}
+
+#scard1,
+#scard2,
+#scard3 {
+    display: block;
+}
+
+#scard4,
+#scard5,
+#scard6,
+#scard7,
+#scard8,
+#scard9 {
+    display: none;
+}
+
+.lineShuffle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #F1C40F;
+}
+
+.lineShuffles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*Start of Agenda*/
+
+.agenda-header {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #F1C40F;
+    text-transform: capitalize;
+}
+
+.agenda__block {
+    margin-left: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    border-left: 2px solid #F1C40F;
+}
+
+.agenda__block:last-child {
+    margin-bottom: 15px;
+}
+
+.agenda__block::before {
+    content: " ";
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-left: -37.5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.agenda__block>.info {
+    display: inline-block;
+    width: 20%;
+    float: left;
+}
+
+.agenda__block>.info>.name {
+    margin-top: -15px;
+    color: black;
+    font-size: 18px;
+}
+
+.agenda__block>.info>.speaker {
+    margin-top: -15px;
+    color: black;
+    font-size: 18px;
+}
+
+.agenda__block>.info>.time {
+    margin-top: 0px;
+    color: #F1C40F;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .agenda__block>.info {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+    .agenda__block>.info {
+        width: 100%;
+    }
+    .block__headline {
+        font-size: 20px;
+    }
+}
+
+
+/* End Agenda */
+
+
+/*start of album*/
+
+.album {
+    margin-top: 50px;
+}
+
+.album-header {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #F1C40F;
+    text-transform: capitalize;
+}
+
+.album-images {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.form-page {
+    background-color: #F2F2F2;
+}
+
+.form-page-ws18 {
+    background-color: #D9EFED;
+}
+
+.form-page-ws20 {
+    background-color: #DBCBE0;
+}
+
+.form-ool3,
+.form-ool {
+    margin-top: 100px;
+}
+
+.form_event_header {
+    position: relative;
+    overflow: hidden;
+    height: 615px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    filter: brightness(50%);
+}
+
+.form_ool3_header {
+    background: url("../img/events/OOL3/Cover_OOL3.png") no-repeat fixed center center;
+    background-size: cover;
+}
+
+.form_ool_header {
+    background: url("../img/events/OOL/out_of_loop.png") no-repeat fixed center center;
+    background-size: cover;
+}
+
+.form_ws-18_header {
+    background: url("../img/events/ws'18/workshops18_cover.jpg") no-repeat fixed center center;
+    background-size: cover;
+}
+
+.form_ws-20_header {
+    background: url("../img/events/ws'20/Event_Cover.png") no-repeat fixed center center;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFB607;
+}
+
+body {
+    overflow-x: hidden;
+}

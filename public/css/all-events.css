@@ -1,0 +1,139 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*------------------------navbar-------------------------*/
+
+.nav-item .active {
+    border-bottom: #F1C40F solid 2px;
+}
+
+nav {
+    background-color: black;
+}
+
+.navbar-toggler {
+    background-color: #F1C40F;
+}
+
+
+/*up button*/
+
+#upbtn .up-btn {
+    background-color: black;
+    color: #F1C40F;
+    box-shadow: 2px 5px 2px 0px #F1C40F;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#upbtn .up-btn:hover {
+    background-color: #F1C40F;
+    color: black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/*header*/
+
+
+/*------------------------header-------------------------*/
+
+.head-img {
+    margin-top: 30px;
+    background-color: black;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+
+/*cards*/
+
+.cards-section {
+    margin-top: 0px;
+}
+
+.cards-section .card {
+    transition: 1s;
+    height: 230px;
+    border-top: solid #F1C40F 2px;
+    border-bottom: solid #F1C40F 2px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.card .btn-card{
+  width: 50px;
+  border-radius: 100%; 
+  background-color:#F1C40F;
+  margin-top: -18px;
+  margin-left: 20px;
+}
+.cards-section .card-body {
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -50px;
+}
+
+.linecol {
+    box-shadow: 0px 0px 5px 1px #3B3B3B;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+    border-top: 5px solid #F1C40F;
+    text-align: center;
+    color: #FFF;
+    background-color: black;
+}
+
+.footer-p {
+    margin-top: 20px;
+    color: white;
+}
+
+footer .col-lg-4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.copyright-line {
+    height: 1px;
+    background-color: #FFB607;
+    opacity: 0.6;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFB607;
+}
+
+body {
+    overflow-x: hidden;
+}
