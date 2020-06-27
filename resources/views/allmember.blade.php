@@ -60,7 +60,8 @@
         <div class="{{'column col-lg-3 col-md-5'.' '.$member->postion}}">
             <div class="card" data-aos="fade-up" data-aos-duration="1000">
                 <img src="{{asset('/images/members/'.$member->image)}}" class="card-img-top" alt="..." height="150" width="100%">
-                <h5 class="text-center mt-3">{{$member->name}}</h5>
+                <p class="text-center mt-2" style="color:#f1c40f; margin-bottom: 0; font-size: 19px;">{{$member->jobTitle}}</p>
+                <h5 class="text-center mt-2">{{$member->name}}</h5>
             </div>
         </div>
         @endforeach

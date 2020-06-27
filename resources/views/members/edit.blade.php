@@ -37,6 +37,10 @@
                         <option>HR</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" class="form-control" id="jobTitle" name="jobTitle" value="{{$member->jobTitle}}">
+                </div>
                 @include('layouts.message')
                 <button type="submit" class="mt-3 btn btn-dark">Submit</button>
             </form>

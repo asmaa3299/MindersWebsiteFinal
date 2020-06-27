@@ -62,6 +62,7 @@ class MemberController extends Controller
         $member->phone_number=$request->phone_number;
         $member->gmail=$request->gmail;
         $member->postion=$request->postion;
+        $member->jobTitle=$request->jobTitle;
         $member->save();
 
         return redirect('/members/index.blade.php');
@@ -86,6 +87,7 @@ class MemberController extends Controller
         $member->phone_number=$request->phone_number;
         $member->gmail=$request->gmail;
         $member->postion=$request->postion;
+        $member->jobTitle=$request->jobTitle;
         $member->save();
         return redirect('/members/index.blade.php');
     }

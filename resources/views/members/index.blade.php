@@ -12,6 +12,7 @@
                         <th scope="col">PHONE NUMBER</th>
                         <th scope="col">EMAIL</th>
                         <th scope="col">POSITION</th>
+                        <th scope="col">JobTitle</th>
                         <th scope="col">Edit</th>
                         <th scope="col">DELETE</th>
                     </tr>
@@ -25,6 +26,7 @@
                         <td class="align-middle">{{$member->phone_number}}</td>
                         <td class="align-middle">{{$member->gmail}}</td>
                         <td class="align-middle">{{$member->postion}}</td>
+                        <td class="align-middle">{{$member->jobTitle}}</td>
                         <td class="align-middle">
                             <form method="get" action="{{'/members/'. $member->id. '/edit' }}">
                                 @csrf

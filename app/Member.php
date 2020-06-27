@@ -8,6 +8,6 @@ class Member extends Model
 {
     //
     protected $fillable = [
-        'id', 'name','image', 'phone_number','gmail','postion'
+        'id', 'name','image', 'phone_number','gmail','postion', 'jobTitle'
     ];
 }
